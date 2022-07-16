@@ -1,0 +1,15 @@
+.app-students{
+    background-color: lightblue;
+    text-align: center;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.entrenamientos{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
