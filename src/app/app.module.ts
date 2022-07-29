@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { StudentsComponent } from './components/students/students.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ListAlumnsComponent } from './list-alumns/list-alumns.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     StudentsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ListAlumnsComponent
   ],
   imports: [
     BrowserModule

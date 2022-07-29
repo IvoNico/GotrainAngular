@@ -1,0 +1,10 @@
+<h1>Listado de Alumnos</h1>
+<ol>
+    <ng-container  *ngFor="let alumnos of alumnos" >
+        <li [ngClass]="alumnos.nombre == 'Ivo' ? 'verde' : 'amarillo'  "  *ngIf="alumnos.nombre != 'jasson'">
+            {{alumnos.nombre | uppercase}} {{alumnos.apellido}}
+        </li>
+    </ng-container> 
+</ol>
+
+
