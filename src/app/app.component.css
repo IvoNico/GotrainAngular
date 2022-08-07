@@ -1,8 +1,11 @@
+*{
+    background-color: #181818;
+}
 .grid-container{
     display: grid;
     grid-template-areas: 
-    'header header header header header header'
-    'menu   main   main   main   main   main';
+    'header header header header header header header'
+    'menu   main   main   main   main   main   main';
 }
 
 .grid-header{
@@ -16,3 +19,4 @@
 .grid-students{
     grid-area: main;
 }
+

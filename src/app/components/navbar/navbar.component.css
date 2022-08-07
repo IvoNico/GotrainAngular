@@ -1,9 +1,11 @@
 .app-navbar{
-    background-color: rgb(60, 60, 60);
+    background-color: #212121;
+    fill: #000000 ;
+    opacity: 98%;
     color: white;
     height: 150vh;
-    
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
+    
 }

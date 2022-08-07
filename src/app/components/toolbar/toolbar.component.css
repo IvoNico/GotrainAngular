@@ -1,4 +1,8 @@
 .app-toolbar{
     height: 60px;
-    background-color: rgb(26, 26, 176);
+    background-color: #212121;
+    fill: #000000 ;
+    opacity: 98%;
+    color: white;
+    color: rgb(163, 255, 255);
 }

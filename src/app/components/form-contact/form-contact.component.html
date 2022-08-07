@@ -1,0 +1,33 @@
+<section class="formContact">
+    <h3>Ingrese sus datos para poder contactarnos</h3>
+    <form [formGroup]="formContact" (ngSubmit)="sendInfo">
+        <label>Nombre:</label>
+        <input [ngClass]="  formContact.get('nombre')?.errors?.['required']? 'rojo' :' blanco'" 
+        type="text" 
+        formControlName="nombre">
+        <p *ngIf="formContact.get('nombre')?.errors?.['required']">Campo obligatorio</p>
+    
+        <label>Apellido:</label>
+        <input [ngClass]="  formContact.get('apellido')?.errors?.['required']? 'rojo' :' blanco'"
+        type="text"
+        formControlName="apellido">
+        <p *ngIf="formContact.get('apellido')?.errors?.['required']">Campo obligatorio</p>
+    
+        <label>Email:</label>
+        <input [ngClass]="  formContact.get('email')?.errors?.['required']? 'rojo' :' blanco'"
+        type="text" 
+        formControlName="email">
+        <p *ngIf="formContact.get('email')?.errors?.['required']">Campo obligatorio</p>
+        <p *ngIf="formContact.get('email')?.errors?.['email']">Debe tener formato correo</p>
+    
+        <label>Nacionalidad:</label>
+        <input [ngClass]="  formContact.get('nacionalidad')?.errors?.['required']? 'rojo' :' blanco'" 
+        type="text" 
+        formControlName="nacionalidad">
+        <p *ngIf="formContact.get('nacionalidad')?.errors?.['required']">Campo obligatorio</p>
+    
+        <button type="submit" [disabled]="!formContact.valid">Enviar</button>
+        <!--                              ! se utiliza para negar en este caso-->
+    </form>
+    
+</section>

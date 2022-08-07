@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { StudentsComponent } from './components/students/students.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ListAlumnsComponent } from './list-alumns/list-alumns.component';
+import { ListAlumnsComponent } from './components/list-alumns/list-alumns.component';
+import { FormContactComponent } from './components/form-contact/form-contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { ListAlumnsComponent } from './list-alumns/list-alumns.component';
     ToolbarComponent,
     StudentsComponent,
     NavbarComponent,
-    ListAlumnsComponent
+    ListAlumnsComponent,
+    FormContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
