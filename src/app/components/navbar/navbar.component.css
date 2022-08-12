@@ -9,3 +9,15 @@
     box-sizing: border-box;
     
 }
+.navbar-Section{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 2px;
+    align-items: center;
+    text-align: center;
+}
+.navbar-Section p {
+    margin-left: 2px;
+    display: fl
+}

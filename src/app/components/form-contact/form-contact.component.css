@@ -1,27 +1,10 @@
 .formContact{
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.393);
     width: 600px;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-}
-input{
-    margin: 0 auto;
-    width: 250px;
-}
-button{
-    width: 200px;
-    margin: 0 auto;
-}
-
-.rojo{
-    background-color: rgba(255, 0, 0, 0.432);
-}
-
-.blanco{
-    background-color: white;
-}

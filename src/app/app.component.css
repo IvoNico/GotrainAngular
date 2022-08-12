@@ -1,6 +1,4 @@
-*{
-    background-color: #181818;
-}
+
 .grid-container{
     display: grid;
     grid-template-areas: 
