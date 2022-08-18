@@ -1,5 +1,7 @@
 import { Component, OnInit} from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource} from '@angular/material/table';
+import { EditarTableCourseComponent } from '../editar-table-course/editar-table-course.component';
 
 
 export interface Curso{
@@ -29,9 +31,22 @@ export class AlumnsTablaComponent implements OnInit {
   dataSource: MatTableDataSource<Curso> = new MatTableDataSource(ELEMENT_DATA);
   
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
 
+  eliminar(elemento: Curso){
+    this.dataSource.data = this.dataSource.data.filter((curso: Curso)=> curso.nombre!= elemento.nombre);
+  }
+
+  editar(elemento: Curso){
+    const cursoRef = this.dialog.open(EditarTableCourseComponent, {
+      width: '400px',
+      data: elemento
+    })
+
+  }
 }

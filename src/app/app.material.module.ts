@@ -5,7 +5,8 @@ import {MatIconModule} from '@angular/material/icon'
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
-import { AlumnsTablaComponent } from "./components/alumns-tabla/alumns-tabla.component";
+import {MatDialogModule} from '@angular/material/dialog'
+
 
 
 
@@ -17,9 +18,7 @@ import { AlumnsTablaComponent } from "./components/alumns-tabla/alumns-tabla.com
         MatInputModule,
         MatFormFieldModule,
         MatButtonModule,
-    ],
-    declarations: [
-      AlumnsTablaComponent
+        MatDialogModule
     ]
 })
 

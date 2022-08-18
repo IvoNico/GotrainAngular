@@ -10,6 +10,8 @@ import { FormContactComponent } from './components/form-contact/form-contact.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app.material.module';
+import { AlumnsTablaComponent } from "./components/alumns-tabla/alumns-tabla.component";
+import { EditarTableCourseComponent } from './components/editar-table-course/editar-table-course.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { AppMaterialModule } from './app.material.module';
     StudentsComponent,
     NavbarComponent,
     ListAlumnsComponent,
-    FormContactComponent
+    FormContactComponent,
+    AlumnsTablaComponent,
+    EditarTableCourseComponent
+    
   ],
   imports: [
     BrowserModule,
