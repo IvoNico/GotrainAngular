@@ -3,24 +3,24 @@
     <mat-form-field [formGroup]="formContact" (ngSubmit)="sendInfo" appearance="outline">
         <mat-label>Nombre</mat-label>
         <input type="text" placeholder="Nombre" formControlName="nombre" matInput>
-        <p *ngIf="formContact.get('nombre')?.errors?.['required']">Campo obligatorio</p>
     </mat-form-field>
+    <p *ngIf="formContact.get('nombre')?.errors?.['required']">Campo obligatorio</p>
     <mat-form-field [formGroup]="formContact" (ngSubmit)="sendInfo" appearance="outline">
         <mat-label>Apellido:</mat-label>
         <input type="text" formControlName="apellido" matInput>
-        <p *ngIf="formContact.get('apellido')?.errors?.['required']">Campo obligatorio</p>
     </mat-form-field>
+    <p *ngIf="formContact.get('apellido')?.errors?.['required']">Campo obligatorio</p>
     <mat-form-field [formGroup]="formContact" (ngSubmit)="sendInfo" appearance="outline">
         <mat-label>Email:</mat-label>
         <input type="text" formControlName="email" matInput>
-        <p *ngIf="formContact.get('email')?.errors?.['required']">Campo obligatorio</p>
-        <p *ngIf="formContact.get('email')?.errors?.['email']">Debe tener formato correo</p>
     </mat-form-field>
+    <p *ngIf="formContact.get('email')?.errors?.['required']">Campo obligatorio</p>
+    <p *ngIf="formContact.get('email')?.errors?.['email']">Debe tener formato correo</p>
     <mat-form-field [formGroup]="formContact" (ngSubmit)="sendInfo" appearance="outline">
         <mat-label>Nacionalidad:</mat-label>
         <input  type="text" formControlName="nacionalidad" matInput>
-        <p *ngIf="formContact.get('nacionalidad')?.errors?.['required']">Campo obligatorio</p>
     </mat-form-field>
+    <p *ngIf="formContact.get('nacionalidad')?.errors?.['required']">Campo obligatorio</p>
         <button mat-button color="primary" type="submit" [disabled]="!formContact.valid">Enviar</button>
         <!--                              ! se utiliza para negar en este caso-->
     
